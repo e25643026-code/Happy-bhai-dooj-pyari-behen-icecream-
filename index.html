@@ -1,0 +1,1099 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For My Pyaari Behan Icecream 🍦❤️ | From Shivam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-glow: rgba(244, 114, 182, 0.55);
+            --gold-glow: rgba(251, 191, 36, 0.45);
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe4ec 0%, #fff1f2 35%, #fdf2f8 70%, #fef3c7 100%);
+            background-size: 300% 300%;
+            animation: gradientFlow 14s ease infinite;
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #4a1d42;
+            margin: 0;
+            transition: background 1.2s ease, color 0.8s ease;
+        }
+
+        /* Cinematic Starry Finale Mode */
+        body.finale-mode {
+            background: radial-gradient(ellipse at bottom, #1e1b4b 0%, #0f172a 60%, #020617 100%);
+            color: #fdf2f8;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .font-script { font-family: 'Dancing Script', cursive; }
+        .font-serif-title { font-family: 'Playfair Display', serif; }
+
+        /* Glassmorphism Containers */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 2px solid rgba(255, 255, 255, 0.92);
+            box-shadow: 0 20px 50px rgba(219, 39, 119, 0.14),
+                        inset 0 0 20px rgba(255, 255, 255, 0.75);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+        }
+
+        .dark-glass {
+            background: rgba(15, 23, 42, 0.74);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1.5px solid rgba(244, 114, 182, 0.35);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6),
+                        0 0 35px rgba(236, 72, 153, 0.22);
+        }
+
+        .tilt-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 55px rgba(219, 39, 119, 0.24),
+                        inset 0 0 24px rgba(255, 255, 255, 0.95);
+        }
+
+        /* Animations */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(-2deg); }
+            50% { transform: translateY(-13px) rotate(3deg); }
+        }
+        .animate-float { animation: floatSlow 3.5s ease-in-out infinite; }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.55); }
+            50% { box-shadow: 0 0 24px 8px rgba(236, 72, 153, 0.22); }
+        }
+        .animate-pulse-glow { animation: pulseGlow 2.4s infinite; }
+
+        @keyframes spinVinyl {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .vinyl-spinning { animation: spinVinyl 4s linear infinite; }
+
+        @keyframes springIn {
+            0% { opacity: 0; transform: scale(0.86) translateY(24px); }
+            70% { opacity: 1; transform: scale(1.02) translateY(-3px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .animate-spring { animation: springIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-8px); }
+            40%, 80% { transform: translateX(8px); }
+        }
+        .animate-shake { animation: shake 0.45s ease-in-out; }
+
+        /* Infinity Path Dash Animation */
+        @keyframes dashInfinity {
+            to { stroke-dashoffset: -240; }
+        }
+        .infinity-glow {
+            stroke-dasharray: 60 180;
+            animation: dashInfinity 3s linear infinite;
+        }
+
+        /* Keypad Button 3D */
+        .key-btn {
+            background: linear-gradient(180deg, #ffffff 0%, #fff1f5 100%);
+            border: 2px solid #fbcfe8;
+            box-shadow: 0 5px 0 #f472b6, 0 8px 15px rgba(244, 114, 182, 0.2);
+            transition: all 0.12s ease;
+        }
+        .key-btn:active {
+            transform: translateY(5px);
+            box-shadow: 0 0 0 #f472b6;
+        }
+
+        /* Flip Card Styling */
+        .flip-container { perspective: 1000px; height: 190px; }
+        .flip-inner {
+            position: relative; width: 100%; height: 100%;
+            transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+        .flip-container.flipped .flip-inner { transform: rotateY(180deg); }
+        .flip-front, .flip-back {
+            position: absolute; inset: 0;
+            backface-visibility: hidden; -webkit-backface-visibility: hidden;
+            border-radius: 1.5rem;
+        }
+        .flip-back { transform: rotateY(180deg); }
+
+        /* Ruled Letter Paper */
+        .ruled-letter {
+            background-color: #fffdfa;
+            background-image: repeating-linear-gradient(transparent, transparent 31px, #fbcfe8 32px);
+            line-height: 32px;
+            border-left: 4px solid #f43f5e;
+            white-space: pre-wrap;
+        }
+
+        /* Equalizer Bars */
+        @keyframes eqBounce {
+            0%, 100% { height: 4px; }
+            50% { height: 16px; }
+        }
+        .eq-bar { width: 3px; background: #ec4899; border-radius: 99px; }
+        .playing .eq-bar:nth-child(1) { animation: eqBounce 0.6s ease-in-out infinite; }
+        .playing .eq-bar:nth-child(2) { animation: eqBounce 0.45s ease-in-out infinite 0.15s; }
+        .playing .eq-bar:nth-child(3) { animation: eqBounce 0.7s ease-in-out infinite 0.3s; }
+        .playing .eq-bar:nth-child(4) { animation: eqBounce 0.5s ease-in-out infinite 0.1s; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.2); }
+        ::-webkit-scrollbar-thumb { background: #f472b6; border-radius: 10px; }
+    </style>
+</head>
+<body class="relative flex flex-col items-center justify-center p-4 sm:p-6">
+
+    <!-- Background Interactive Particle & Fireworks Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+    <!-- Hidden File Input for Custom MP3 Upload -->
+    <input type="file" id="mp3-upload" accept="audio/*" class="hidden" onchange="handleMp3Upload(event)">
+
+    <!-- Top Floating Bar: Edit Note Button + Vinyl Music Player -->
+    <div class="fixed top-3 left-3 right-3 sm:top-5 sm:left-5 sm:right-5 z-50 flex items-center justify-between gap-2 pointer-events-none">
+        
+        <!-- Quick Edit Note Button -->
+        <button onclick="openEditorModal()" class="pointer-events-auto glass-card rounded-full px-3.5 py-2 flex items-center gap-2 shadow-lg border-pink-300 hover:scale-105 active:scale-95 transition-all text-xs sm:text-sm font-bold text-rose-600">
+            <span>✏️</span>
+            <span>Edit Note</span>
+        </button>
+
+        <!-- Floating Vinyl Music Player Widget -->
+        <div id="music-widget" class="pointer-events-auto glass-card rounded-full pl-2.5 pr-3 py-1.5 flex items-center gap-2.5 shadow-lg border-pink-300 select-none">
+            <!-- Play/Pause Disc -->
+            <div onclick="toggleMusic()" class="cursor-pointer flex items-center gap-2.5">
+                <div id="vinyl-disc" class="w-10 h-10 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-amber-500 flex items-center justify-center shadow-md border-2 border-white relative shrink-0">
+                    <div class="w-3 h-3 rounded-full bg-white"></div>
+                    <span class="absolute -top-1 -right-1 text-xs">🎶</span>
+                </div>
+                <div class="text-left">
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-rose-500 flex items-center gap-1.5">
+                        <span id="music-status-text">Tap to Play</span>
+                        <span id="eq-container" class="inline-flex items-end gap-0.5 h-4">
+                            <span class="eq-bar h-1"></span>
+                            <span class="eq-bar h-1"></span>
+                            <span class="eq-bar h-1"></span>
+                            <span class="eq-bar h-1"></span>
+                        </span>
+                    </div>
+                    <div id="song-title-display" class="text-xs sm:text-sm font-bold text-purple-950 truncate max-w-[130px] sm:max-w-[180px]">
+                        For <span class="sis-name-display">Icecream</span> 🎶
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upload Custom MP3 Button -->
+            <button onclick="document.getElementById('mp3-upload').click()" title="Apna Pasandida Song MP3 Lagayein" class="ml-1 px-2.5 py-1.5 rounded-full bg-pink-100 hover:bg-rose-500 hover:text-white text-rose-600 text-[10px] sm:text-xs font-bold transition-colors shrink-0">
+                📂 MP3
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <main class="relative z-10 w-full max-w-2xl mx-auto my-auto pt-16 pb-8">
+
+        <!-- ==================== SCREEN 1: CUTE PASSCODE LOCK ==================== -->
+        <section id="screen-lock" class="glass-card rounded-[2.2rem] p-6 sm:p-10 text-center max-w-md mx-auto animate-spring">
+            <!-- Cute Animated Ice Cream Mascot SVG -->
+            <div class="w-24 h-24 mx-auto mb-3 animate-float">
+                <svg viewBox="0 0 120 120" class="w-full h-full drop-shadow-md">
+                    <polygon points="38,62 82,62 60,114" fill="#f59e0b" stroke="#d97706" stroke-width="3" stroke-linejoin="round"/>
+                    <line x1="46" y1="74" x2="74" y2="74" stroke="#b45309" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="51" y1="88" x2="69" y2="88" stroke="#b45309" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="60" cy="48" r="26" fill="#ff85a2"/>
+                    <circle cx="42" cy="58" r="9" fill="#ff85a2"/>
+                    <circle cx="78" cy="58" r="9" fill="#ff85a2"/>
+                    <circle cx="60" cy="60" r="10" fill="#ff85a2"/>
+                    <circle cx="60" cy="20" r="7" fill="#e11d48"/>
+                    <path d="M60,13 Q66,5 73,8" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="51" cy="46" r="3" fill="#3b0764"/>
+                    <circle cx="69" cy="46" r="3" fill="#3b0764"/>
+                    <circle cx="46" cy="51" r="3.5" fill="#fda4af" opacity="0.8"/>
+                    <circle cx="74" cy="51" r="3.5" fill="#fda4af" opacity="0.8"/>
+                    <path d="M55,52 Q60,57 65,52" fill="none" stroke="#3b0764" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <span class="inline-block bg-pink-100 text-rose-600 text-xs font-bold px-3 py-1 rounded-full mb-2 tracking-wide">
+                ✨ EK CHHOTA SA SURPRISE, SIRF AAPKE LIYE ✨
+            </span>
+            <h1 class="font-serif-title text-3xl sm:text-4xl font-bold text-rose-600 mb-1">
+                Hello <span class="sis-name-display">Icecream</span>! 🍦
+            </h1>
+            <p class="text-xs sm:text-sm text-purple-900/80 font-medium mb-5">
+                Aapke bhai <span class="bro-name-display font-bold text-rose-600">Shivam</span> ne aapke liye kuch khaas banaya hai. Secret code darj kijiye ya neeche button dabaiye:
+            </p>
+
+            <!-- 4-Digit Pin Dots -->
+            <div id="pin-boxes" class="flex justify-center gap-3 mb-4">
+                <div class="pin-slot w-12 h-14 rounded-2xl bg-white/90 border-2 border-pink-300 flex items-center justify-center text-2xl font-bold text-rose-600 shadow-inner"></div>
+                <div class="pin-slot w-12 h-14 rounded-2xl bg-white/90 border-2 border-pink-300 flex items-center justify-center text-2xl font-bold text-rose-600 shadow-inner"></div>
+                <div class="pin-slot w-12 h-14 rounded-2xl bg-white/90 border-2 border-pink-300 flex items-center justify-center text-2xl font-bold text-rose-600 shadow-inner"></div>
+                <div class="pin-slot w-12 h-14 rounded-2xl bg-white/90 border-2 border-pink-300 flex items-center justify-center text-2xl font-bold text-rose-600 shadow-inner"></div>
+            </div>
+
+            <p id="pin-feedback" class="text-xs font-bold text-rose-500 h-5 mb-3">
+                Hint: Sweet code <span class="underline">0000</span> ya <span class="underline">1234</span> 💕
+            </p>
+
+            <!-- Numpad -->
+            <div class="grid grid-cols-3 gap-3 max-w-[240px] mx-auto mb-5">
+                <button onclick="pressKey('1')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">1</button>
+                <button onclick="pressKey('2')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">2</button>
+                <button onclick="pressKey('3')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">3</button>
+                <button onclick="pressKey('4')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">4</button>
+                <button onclick="pressKey('5')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">5</button>
+                <button onclick="pressKey('6')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">6</button>
+                <button onclick="pressKey('7')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">7</button>
+                <button onclick="pressKey('8')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">8</button>
+                <button onclick="pressKey('9')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">9</button>
+                <button onclick="clearPin()" class="key-btn py-2.5 rounded-2xl text-lg font-bold text-purple-600 bg-purple-50">⌫</button>
+                <button onclick="pressKey('0')" class="key-btn py-2.5 rounded-2xl text-xl font-bold text-rose-600">0</button>
+                <button onclick="unlockSuccess()" class="key-btn py-2.5 rounded-2xl text-lg font-bold text-emerald-600 bg-emerald-50">💖</button>
+            </div>
+
+            <!-- 1-Tap Magic Unlock Button -->
+            <button onclick="unlockSuccess()" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 text-white font-bold text-sm sm:text-base shadow-lg hover:opacity-95 active:scale-95 transition-all animate-pulse-glow">
+                🎁 Surprise Kholiye, <span class="sis-name-display">Icecream</span> ✨
+            </button>
+        </section>
+
+        <!-- ==================== SCREEN 2: GRAND ANIMATED WELCOME ==================== -->
+        <section id="screen-welcome" class="hidden glass-card rounded-[2.2rem] p-7 sm:p-10 text-center max-w-lg mx-auto">
+            <div class="flex justify-center items-center gap-3 text-5xl sm:text-6xl mb-4">
+                <span class="animate-float" style="animation-delay: 0s;">🍦</span>
+                <span class="animate-float" style="animation-delay: 0.4s;">💖</span>
+                <span class="animate-float" style="animation-delay: 0.8s;">🌸</span>
+            </div>
+
+            <div class="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-pink-100 to-amber-100 text-rose-700 font-bold text-xs sm:text-sm mb-3 border border-pink-200">
+                ✨ Aapke Bhai <span class="bro-name-display">Shivam</span> Ki Taraf Se ✨
+            </div>
+
+            <h1 class="font-serif-title text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-pink-600 to-amber-600 leading-tight mb-4">
+                Pyaari Behan <span class="sis-name-display">Icecream</span>!
+            </h1>
+
+            <div class="bg-white/80 rounded-2xl p-4 sm:p-5 border border-pink-200 mb-6 min-h-[120px] flex items-center justify-center shadow-inner">
+                <p id="typewriter-text" class="text-sm sm:text-base font-semibold text-purple-950 leading-relaxed"></p>
+            </div>
+
+            <button onclick="goToHub()" class="py-4 px-8 rounded-2xl bg-gradient-to-r from-rose-500 to-amber-500 text-white font-bold text-base sm:text-lg shadow-xl hover:scale-105 active:scale-95 transition-all animate-pulse-glow">
+                Aage Dekhiye ✨🎁
+            </button>
+        </section>
+
+        <!-- ==================== SCREEN 3: INTERACTIVE SURPRISE HUB ==================== -->
+        <section id="screen-hub" class="hidden w-full">
+            <!-- Header Banner -->
+            <div class="glass-card rounded-3xl p-5 sm:p-6 text-center mb-6 relative">
+                <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-rose-600 mb-1">
+                    <span class="bro-name-display">Shivam</span> ❤️ <span class="sis-name-display">Icecream</span>
+                </h2>
+                <p class="text-xs sm:text-sm font-semibold text-purple-900/80">
+                    "Aap sirf meri behan nahi, meri sabse badi strength aur best friend hain!" — Har gift box par tap kijiye 👇
+                </p>
+            </div>
+
+            <!-- 4 Interactive Surprise Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mb-6">
+                
+                <!-- Card 1: Dil Ki Baat (Editable Note) -->
+                <div onclick="openModal('modal-letter')" class="glass-card tilt-card rounded-3xl p-6 cursor-pointer relative overflow-hidden group">
+                    <div class="absolute -right-4 -top-4 text-7xl opacity-15 group-hover:scale-110 transition-transform">💌</div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-400 to-pink-600 text-white text-3xl flex items-center justify-center shadow-md">
+                            💌
+                        </div>
+                        <button onclick="event.stopPropagation(); openEditorModal();" class="px-2.5 py-1 rounded-full bg-rose-100 hover:bg-rose-500 hover:text-white text-rose-600 text-[11px] font-bold transition-colors">
+                            ✏️ Edit
+                        </button>
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-rose-500">Surprise #1</span>
+                    <h3 class="text-xl font-bold text-purple-950 mt-0.5 mb-1">Dil Ki Baat (My Note)</h3>
+                    <p class="text-sm text-purple-900/75 font-medium">
+                        Ek heartfelt note <span class="bro-name-display">Shivam</span> ki taraf se apni pyaari <span class="sis-name-display">Icecream</span> ke liye.
+                    </p>
+                    <div class="mt-4 inline-flex items-center text-xs font-bold text-rose-600 group-hover:translate-x-1 transition-transform">
+                        Note Padhiye & Edit Kijiye →
+                    </div>
+                </div>
+
+                <!-- Card 2: Aapki Khaas Baatein -->
+                <div onclick="openModal('modal-reasons')" class="glass-card tilt-card rounded-3xl p-6 cursor-pointer relative overflow-hidden group">
+                    <div class="absolute -right-4 -top-4 text-7xl opacity-15 group-hover:scale-110 transition-transform">🌟</div>
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-400 to-indigo-600 text-white text-3xl flex items-center justify-center shadow-md mb-4">
+                        ✨
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-purple-600">Surprise #2</span>
+                    <h3 class="text-xl font-bold text-purple-950 mt-0.5 mb-1">Aapki Khaas Baatein</h3>
+                    <p class="text-sm text-purple-900/75 font-medium">
+                        Har magic card ko flip karke dekhiye ki <span class="sis-name-display">Icecream</span> sabse best kyun hain!
+                    </p>
+                    <div class="mt-4 inline-flex items-center text-xs font-bold text-purple-600 group-hover:translate-x-1 transition-transform">
+                        Magic Cards Dekhiye →
+                    </div>
+                </div>
+
+                <!-- Card 3: Icecream Special Sundae Maker -->
+                <div onclick="openModal('modal-sundae')" class="glass-card tilt-card rounded-3xl p-6 cursor-pointer relative overflow-hidden group">
+                    <div class="absolute -right-4 -top-4 text-7xl opacity-15 group-hover:scale-110 transition-transform">🍨</div>
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white text-3xl flex items-center justify-center shadow-md mb-4">
+                        🍦
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-orange-600">Surprise #3</span>
+                    <h3 class="text-xl font-bold text-purple-950 mt-0.5 mb-1"><span class="sis-name-display">Icecream</span> Sundae Maker</h3>
+                    <p class="text-sm text-purple-900/75 font-medium">
+                        Apni pasandida virtual sundae banaiye scoops, cherries aur sprinkles ke saath!
+                    </p>
+                    <div class="mt-4 inline-flex items-center text-xs font-bold text-orange-600 group-hover:translate-x-1 transition-transform">
+                        Sundae Banaiye →
+                    </div>
+                </div>
+
+                <!-- Card 4: Official Award -->
+                <div onclick="openModal('modal-promise')" class="glass-card tilt-card rounded-3xl p-6 cursor-pointer relative overflow-hidden group">
+                    <div class="absolute -right-4 -top-4 text-7xl opacity-15 group-hover:scale-110 transition-transform">🏆</div>
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-600 text-white text-3xl flex items-center justify-center shadow-md mb-4">
+                        🤗
+                    </div>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-teal-600">Surprise #4</span>
+                    <h3 class="text-xl font-bold text-purple-950 mt-0.5 mb-1">Best Sister Award</h3>
+                    <p class="text-sm text-purple-900/75 font-medium">
+                        Official "World's Best Sister" certificate aur ek pyaari si Jaadu Ki Jhappi!
+                    </p>
+                    <div class="mt-4 inline-flex items-center text-xs font-bold text-teal-600 group-hover:translate-x-1 transition-transform">
+                        Certificate Dekhiye →
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Grand Finale Launch Banner -->
+            <div onclick="enterGrandFinale()" class="cursor-pointer rounded-3xl p-6 sm:p-7 bg-gradient-to-r from-indigo-950 via-purple-900 to-rose-900 text-white shadow-2xl border-2 border-pink-400/50 text-center relative overflow-hidden group hover:scale-[1.02] transition-all">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,114,182,0.25),transparent_70%)]"></div>
+                <span class="relative inline-block px-3 py-1 rounded-full bg-pink-500/30 border border-pink-300/40 text-pink-200 text-xs font-bold mb-2">
+                    🎆 SPECIAL ENDING SURPRISE 🎆
+                </span>
+                <h3 class="relative font-serif-title text-2xl sm:text-3xl font-bold text-amber-200 mb-1">
+                    Grand Finale: Forever Sibling Bond ✨
+                </h3>
+                <p class="relative text-xs sm:text-sm text-pink-100/90 mb-4">
+                    Starry night lantern show, fireworks aur humare hamesha ke bhai-behen promise ke liye tap kijiye!
+                </p>
+                <span class="relative inline-block py-2.5 px-6 rounded-full bg-gradient-to-r from-pink-500 to-amber-500 text-white font-bold text-sm shadow-lg group-hover:shadow-pink-500/40">
+                    Grand Finale Dekhiye 🚀💖
+                </span>
+            </div>
+        </section>
+
+        <!-- ==================== SCREEN 4: GRAND FINALE ENDING ==================== -->
+        <section id="screen-finale" class="hidden w-full text-center">
+            <div class="dark-glass rounded-[2.2rem] p-6 sm:p-10 relative overflow-hidden">
+                <!-- Back Button -->
+                <button onclick="exitGrandFinale()" class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-pink-200 text-xs font-bold transition-colors">
+                    ← Wapas Jayein
+                </button>
+
+                <div class="mt-4 mb-2 text-xs font-bold uppercase tracking-[0.25em] text-amber-300">
+                    ✨ Forever Sibling Bond ✨
+                </div>
+
+                <!-- Animated Infinity Bond SVG -->
+                <div class="w-64 sm:w-80 mx-auto my-2">
+                    <svg viewBox="0 0 300 110" class="w-full h-auto overflow-visible">
+                        <defs>
+                            <linearGradient id="infGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#f43f5e"/>
+                                <stop offset="50%" stop-color="#fbbf24"/>
+                                <stop offset="100%" stop-color="#c084fc"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Base Infinity Loop -->
+                        <path d="M85,15 C125,15 175,95 215,95 C255,95 255,15 215,15 C175,15 125,95 85,95 C45,95 45,15 85,15 Z" 
+                              fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="6" stroke-linecap="round"/>
+                        <path d="M85,15 C125,15 175,95 215,95 C255,95 255,15 215,15 C175,15 125,95 85,95 C45,95 45,15 85,15 Z" 
+                              fill="none" stroke="url(#infGrad)" stroke-width="5" stroke-linecap="round"/>
+                        <!-- Glowing Moving Spark -->
+                        <path d="M85,15 C125,15 175,95 215,95 C255,95 255,15 215,15 C175,15 125,95 85,95 C45,95 45,15 85,15 Z" 
+                              fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" class="infinity-glow"/>
+                        <!-- Names inside loops -->
+                        <text x="85" y="60" text-anchor="middle" fill="#fda4af" font-family="Dancing Script, cursive" font-weight="700" font-size="22" class="bro-svg-name">Shivam</text>
+                        <text x="215" y="60" text-anchor="middle" fill="#fde68a" font-family="Dancing Script, cursive" font-weight="700" font-size="22" class="sis-svg-name">Icecream</text>
+                    </svg>
+                </div>
+
+                <!-- Respectful Rotating Quotes Box -->
+                <div class="bg-white/10 border border-pink-400/30 rounded-2xl p-4 sm:p-5 my-4 backdrop-blur-md">
+                    <div class="text-[11px] font-bold text-pink-300 uppercase tracking-wider mb-1">💖 Dil Se Aapke Liye</div>
+                    <p id="finale-quote-line" class="font-serif-title italic text-lg sm:text-2xl text-amber-200 transition-all duration-500 min-h-[36px]">
+                        "Aap sirf meri behan nahi, meri sabse badi strength hain ✨"
+                    </p>
+                    <p id="finale-quote-sub" class="text-xs sm:text-sm text-pink-100/85 mt-1.5">
+                        Aapki muskurahat se hi ghar mein raunak rehti hai 🌸
+                    </p>
+                </div>
+
+                <!-- Interactive Hold-to-Seal Sibling Promise -->
+                <div class="mt-6">
+                    <p class="text-xs sm:text-sm text-pink-200 font-semibold mb-3">
+                        Neeche diye gaye Heart ko 2 seconds press karke humara <strong class="text-amber-300">Bhai-Behen Promise</strong> seal kijiye 👇
+                    </p>
+
+                    <div class="relative inline-flex items-center justify-center">
+                        <!-- Progress Ring -->
+                        <svg class="w-28 h-28 -rotate-90">
+                            <circle cx="56" cy="56" r="48" stroke="rgba(255,255,255,0.15)" stroke-width="6" fill="none"/>
+                            <circle id="promise-ring" cx="56" cy="56" r="48" stroke="#fbbf24" stroke-width="6" fill="none"
+                                    stroke-dasharray="301.6" stroke-dashoffset="301.6" stroke-linecap="round"/>
+                        </svg>
+                        <button id="hold-promise-btn"
+                                onmousedown="startHoldPromise()" onmouseup="cancelHoldPromise()" onmouseleave="cancelHoldPromise()"
+                                ontouchstart="startHoldPromise(event)" ontouchend="cancelHoldPromise()"
+                                class="absolute w-20 h-20 rounded-full bg-gradient-to-br from-rose-500 to-pink-600 text-white text-3xl shadow-[0_0_25px_rgba(244,63,94,0.7)] flex items-center justify-center select-none active:scale-95 transition-transform">
+                            💖
+                        </button>
+                    </div>
+
+                    <div id="promise-sealed-card" class="hidden mt-5 p-5 rounded-2xl bg-gradient-to-r from-amber-500/20 via-pink-500/20 to-purple-500/20 border-2 border-amber-300/60 animate-spring">
+                        <div class="text-2xl mb-1">🎆🤝✨</div>
+                        <h4 class="font-serif-title text-2xl font-bold text-amber-300">Promise Sealed Forever!</h4>
+                        <p class="text-sm text-white/95 mt-1.5 leading-relaxed">
+                            "Hamesha khush rahiye <strong class="sis-name-display text-amber-200">Icecream</strong> — aapka bhai <strong class="bro-name-display text-pink-300">Shivam</strong> har kadam par hamesha aapke saath khada rahega! Aap sabse best hain ❤️"
+                        </p>
+                        <button onclick="launchFireworkSalvo()" class="mt-3 px-5 py-2 rounded-full bg-amber-400 text-slate-950 font-bold text-xs hover:bg-amber-300 transition-colors">
+                            🎆 Phir Se Celebrate Kijiye!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== MODALS ==================== -->
+
+    <!-- MODAL 1: HEARTFELT LETTER (WITH INLINE EDIT BUTTON) -->
+    <div id="modal-letter" class="hidden fixed inset-0 z-50 bg-purple-950/55 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-5 sm:p-7 relative shadow-2xl border-4 border-pink-300 animate-spring max-h-[88vh] overflow-y-auto">
+            <div class="flex items-center justify-between gap-2 mb-3 pr-8">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">💌</span>
+                    <h3 id="letter-title-display" class="font-serif-title text-xl sm:text-2xl font-bold text-rose-600">Meri Pyaari Icecream ke Naam</h3>
+                </div>
+                <button onclick="closeModal('modal-letter'); openEditorModal();" class="px-3 py-1.5 rounded-full bg-pink-100 hover:bg-rose-500 hover:text-white text-rose-600 text-xs font-bold transition-colors shrink-0">
+                    ✏️ Edit Note
+                </button>
+            </div>
+            <button onclick="closeModal('modal-letter')" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-rose-100 text-rose-600 font-bold text-xl flex items-center justify-center hover:bg-rose-500 hover:text-white transition-colors">×</button>
+
+            <div class="ruled-letter rounded-2xl p-4 sm:p-5 text-sm sm:text-base text-gray-800 font-medium shadow-inner">
+                <div id="letter-body-display"></div>
+                <p class="mt-4 text-right font-script text-2xl font-bold text-rose-600">
+                    Aapka Bhai,<br><span class="bro-name-display">Shivam</span> 💖
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: LIVE NOTE & WEBSITE CUSTOMIZER (EDIT NOTE) -->
+    <div id="modal-editor" class="hidden fixed inset-0 z-50 bg-purple-950/65 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-5 sm:p-7 relative shadow-2xl border-4 border-rose-400 animate-spring max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-editor')" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-rose-100 text-rose-600 font-bold text-xl flex items-center justify-center hover:bg-rose-500 hover:text-white transition-colors">×</button>
+            
+            <div class="flex items-center gap-2 mb-1">
+                <span class="text-2xl">✏️</span>
+                <h3 class="font-serif-title text-2xl font-bold text-rose-600">Apna Note Edit Kijiye</h3>
+            </div>
+            <p class="text-xs text-gray-500 font-semibold mb-4">Jo bhi aap likhenge woh turant website ke letter mein save aur update ho jayega!</p>
+
+            <div class="space-y-3 text-left">
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-purple-900 mb-1">Sister's Name</label>
+                        <input id="edit-sis-name" type="text" class="w-full px-3 py-2 rounded-xl border-2 border-pink-200 focus:border-rose-500 outline-none text-sm font-bold text-rose-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-purple-900 mb-1">Your Name (Brother)</label>
+                        <input id="edit-bro-name" type="text" class="w-full px-3 py-2 rounded-xl border-2 border-pink-200 focus:border-rose-500 outline-none text-sm font-bold text-purple-700">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-purple-900 mb-1">Letter Heading</label>
+                    <input id="edit-letter-title" type="text" class="w-full px-3 py-2 rounded-xl border-2 border-pink-200 focus:border-rose-500 outline-none text-sm font-semibold">
+                </div>
+
+                <div>
+                    <div class="flex items-center justify-between mb-1">
+                        <label class="text-xs font-bold text-purple-900">Apna Heartfelt Note Likhiye:</label>
+                        <div class="flex gap-1">
+                            <button type="button" onclick="insertEmoji('❤️')" class="px-1.5 py-0.5 bg-pink-50 rounded hover:bg-pink-100 text-xs">❤️</button>
+                            <button type="button" onclick="insertEmoji('🍦')" class="px-1.5 py-0.5 bg-pink-50 rounded hover:bg-pink-100 text-xs">🍦</button>
+                            <button type="button" onclick="insertEmoji('🌸')" class="px-1.5 py-0.5 bg-pink-50 rounded hover:bg-pink-100 text-xs">🌸</button>
+                            <button type="button" onclick="insertEmoji('🤗')" class="px-1.5 py-0.5 bg-pink-50 rounded hover:bg-pink-100 text-xs">🤗</button>
+                            <button type="button" onclick="insertEmoji('✨')" class="px-1.5 py-0.5 bg-pink-50 rounded hover:bg-pink-100 text-xs">✨</button>
+                        </div>
+                    </div>
+                    <textarea id="edit-letter-body" rows="6" class="w-full p-3 rounded-2xl border-2 border-pink-200 focus:border-rose-500 outline-none text-sm leading-relaxed font-medium text-gray-800"></textarea>
+                </div>
+
+                <!-- 1-Click Sweet Line Adder -->
+                <div>
+                    <span class="block text-[11px] font-bold text-gray-500 mb-1.5">1-Click Sweet Lines Add Kijiye:</span>
+                    <div class="flex flex-wrap gap-1.5">
+                        <button type="button" onclick="appendPresetLine('\nAap meri zindagi ki sabse precious blessing hain! ❤️')" class="px-2.5 py-1 rounded-full bg-purple-100 hover:bg-purple-200 text-purple-800 text-[11px] font-bold">+ Precious Blessing</button>
+                        <button type="button" onclick="appendPresetLine('\nAapki muskurahat aur aapka saath mere liye sab kuch hai! 🍦✨')" class="px-2.5 py-1 rounded-full bg-rose-100 hover:bg-rose-200 text-rose-800 text-[11px] font-bold">+ Pyaari Muskurahat</button>
+                        <button type="button" onclick="appendPresetLine('\nHamesha aise hi khush rahiye aur muskurati rahiye! 🌸💖')" class="px-2.5 py-1 rounded-full bg-amber-100 hover:bg-amber-200 text-amber-800 text-[11px] font-bold">+ Hamesha Khush Rahiye</button>
+                    </div>
+                </div>
+
+                <div class="flex gap-2.5 pt-2">
+                    <button onclick="saveCustomNote()" class="flex-1 py-3 px-4 rounded-2xl bg-gradient-to-r from-rose-500 to-amber-500 text-white font-bold text-sm shadow-lg hover:opacity-95 active:scale-95 transition-all">
+                        💾 Save & Preview Note
+                    </button>
+                    <button onclick="resetDefaultNote()" class="py-3 px-4 rounded-2xl bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-xs">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: FLIP CARDS (AAPKI KHAAS BAATEIN) -->
+    <div id="modal-reasons" class="hidden fixed inset-0 z-50 bg-purple-950/55 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-card bg-white/95 rounded-3xl max-w-lg w-full p-5 sm:p-7 relative shadow-2xl border-4 border-purple-300 animate-spring max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('modal-reasons')" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-purple-100 text-purple-600 font-bold text-xl flex items-center justify-center hover:bg-purple-600 hover:text-white transition-colors">×</button>
+            
+            <h3 class="font-serif-title text-2xl sm:text-3xl font-bold text-center text-purple-700 mb-1">Aapki Khaas Baatein ✨</h3>
+            <p class="text-center text-xs text-purple-900/70 font-semibold mb-5">Har card par tap karke flip kijiye!</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Card 1 -->
+                <div class="flip-container cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-inner">
+                        <div class="flip-front bg-gradient-to-br from-rose-400 to-pink-500 text-white p-5 flex flex-col items-center justify-center text-center shadow-lg">
+                            <span class="text-4xl mb-2">😊</span>
+                            <h4 class="font-bold text-base">Aapki Pyaari Muskurahat</h4>
+                            <span class="text-xs opacity-90 mt-1">Tap to Flip ↻</span>
+                        </div>
+                        <div class="flip-back bg-rose-50 border-2 border-rose-300 p-4 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm font-bold text-rose-700">Aapki Pyaari Muskurahat 😊</p>
+                            <p class="text-xs text-gray-700 mt-1.5 leading-relaxed">Jab aap muskurati hain, toh poora din khushnuma ho jaata hai. 💕</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flip-container cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-inner">
+                        <div class="flip-front bg-gradient-to-br from-purple-500 to-indigo-500 text-white p-5 flex flex-col items-center justify-center text-center shadow-lg">
+                            <span class="text-4xl mb-2">🤍</span>
+                            <h4 class="font-bold text-base">Sabse Caring Behan</h4>
+                            <span class="text-xs opacity-90 mt-1">Tap to Flip ↻</span>
+                        </div>
+                        <div class="flip-back bg-purple-50 border-2 border-purple-300 p-4 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm font-bold text-purple-700">Sabse Caring Behan 🤍</p>
+                            <p class="text-xs text-gray-700 mt-1.5 leading-relaxed">Aap bina kahe har baat samajh leti hain aur hamesha sabka khayal rakhti hain. ✨</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flip-container cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-inner">
+                        <div class="flip-front bg-gradient-to-br from-amber-400 to-orange-500 text-white p-5 flex flex-col items-center justify-center text-center shadow-lg">
+                            <span class="text-4xl mb-2">🌟</span>
+                            <h4 class="font-bold text-base">Meri Best Supporter</h4>
+                            <span class="text-xs opacity-90 mt-1">Tap to Flip ↻</span>
+                        </div>
+                        <div class="flip-back bg-amber-50 border-2 border-amber-300 p-4 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm font-bold text-amber-700">Meri Best Supporter 🌟</p>
+                            <p class="text-xs text-gray-700 mt-1.5 leading-relaxed">Har mushkil waqt mein aapka saath mujhe sabse zyada himmat deta hai. 🙏</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flip-container cursor-pointer" onclick="this.classList.toggle('flipped')">
+                    <div class="flip-inner">
+                        <div class="flip-front bg-gradient-to-br from-teal-400 to-emerald-500 text-white p-5 flex flex-col items-center justify-center text-center shadow-lg">
+                            <span class="text-4xl mb-2">🍨</span>
+                            <h4 class="font-bold text-base">Sweetest Like Icecream</h4>
+                            <span class="text-xs opacity-90 mt-1">Tap to Flip ↻</span>
+                        </div>
+                        <div class="flip-back bg-teal-50 border-2 border-teal-300 p-4 flex flex-col items-center justify-center text-center">
+                            <p class="text-sm font-bold text-teal-700">Sweetest Like Icecream 🍨</p>
+                            <p class="text-xs text-gray-700 mt-1.5 leading-relaxed">Aapke naam ki tarah aapka dil bhi bahut sweet aur pure hai! ❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: VIRTUAL ICECREAM SUNDAE BUILDER -->
+    <div id="modal-sundae" class="hidden fixed inset-0 z-50 bg-purple-950/55 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-5 sm:p-7 relative shadow-2xl border-4 border-orange-300 animate-spring text-center">
+            <button onclick="closeModal('modal-sundae')" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-orange-100 text-orange-600 font-bold text-xl flex items-center justify-center hover:bg-orange-500 hover:text-white transition-colors">×</button>
+            
+            <h3 class="font-serif-title text-2xl sm:text-3xl font-bold text-orange-500 mb-1"><span class="sis-name-display">Icecream</span> Special Sundae 🍨</h3>
+            <p class="text-xs font-semibold text-gray-500 mb-4"><span class="bro-name-display">Shivam</span> ki taraf se unlimited scoops! Buttons dabakar banaiye:</p>
+
+            <div class="bg-gradient-to-b from-pink-50 to-amber-50 rounded-2xl p-4 border-2 border-dashed border-pink-300 min-h-[195px] flex flex-col items-center justify-end relative overflow-hidden mb-4">
+                <div id="sundae-toppings" class="text-2xl tracking-widest mb-1 min-h-[28px]"></div>
+                <div id="sundae-scoops" class="flex flex-col-reverse items-center -space-y-3 mb-1">
+                    <div class="w-24 h-12 rounded-full bg-pink-400 border-b-4 border-pink-500 shadow-md flex items-center justify-center text-white text-xs font-bold">Strawberry</div>
+                </div>
+                <div class="w-36 h-12 bg-gradient-to-b from-sky-200/80 to-sky-300/90 rounded-b-3xl border-2 border-sky-400 flex items-center justify-center text-xs font-bold text-sky-900 shadow-md">
+                    🍨 For <span class="sis-name-display ml-1">Icecream</span>
+                </div>
+            </div>
+
+            <p id="sundae-compliment" class="text-xs sm:text-sm font-bold text-rose-600 mb-4 min-h-[22px]">
+                Aapke liye ek special treat, kyunki aap sabse best hain! 🍨✨
+            </p>
+
+            <div class="grid grid-cols-2 gap-2.5 mb-3">
+                <button onclick="addScoop('Vanilla', 'bg-amber-100 border-amber-300 !text-amber-900')" class="py-2.5 px-3 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 font-bold text-xs transition-all active:scale-95 border border-amber-200">
+                    🍦 + Vanilla Scoop
+                </button>
+                <button onclick="addScoop('Chocolate', 'bg-amber-800 border-amber-950')" class="py-2.5 px-3 rounded-xl bg-amber-100 hover:bg-amber-200 text-amber-950 font-bold text-xs transition-all active:scale-95">
+                    🍫 + Choco Scoop
+                </button>
+                <button onclick="addScoop('Mango', 'bg-yellow-400 border-yellow-500 !text-yellow-950')" class="py-2.5 px-3 rounded-xl bg-yellow-100 hover:bg-yellow-200 text-yellow-900 font-bold text-xs transition-all active:scale-95">
+                    🥭 + Mango Scoop
+                </button>
+                <button onclick="addTopping('🍒🍫✨')" class="py-2.5 px-3 rounded-xl bg-pink-100 hover:bg-pink-200 text-pink-900 font-bold text-xs transition-all active:scale-95">
+                    🍒 + Cherries & Chips
+                </button>
+            </div>
+            <button onclick="resetSundae()" class="w-full py-2 px-3 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-xs transition-all">
+                🔄 Naya Bowl Banaiye
+            </button>
+        </div>
+    </div>
+
+    <!-- MODAL 4: JAADU KI JHAPPI & CERTIFICATE -->
+    <div id="modal-promise" class="hidden fixed inset-0 z-50 bg-purple-950/55 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-gradient-to-br from-rose-50 via-white to-amber-50 rounded-3xl max-w-md w-full p-6 sm:p-7 relative shadow-2xl border-4 border-amber-300 animate-spring text-center">
+            <button onclick="closeModal('modal-promise')" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-rose-100 text-rose-600 font-bold text-xl flex items-center justify-center hover:bg-rose-500 hover:text-white transition-colors">×</button>
+            
+            <div class="border-4 double border-amber-400 rounded-2xl p-4 sm:p-5 bg-white/95 shadow-inner mb-5 relative">
+                <div class="text-3xl mb-1">🏆👑✨</div>
+                <div class="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-600">Official Sibling Award</div>
+                <h3 class="font-serif-title text-2xl sm:text-3xl font-bold text-rose-600 my-1">World's Best Sister</h3>
+                <p class="text-xs text-gray-500">Proudly Awarded To</p>
+                <div class="text-2xl font-extrabold text-purple-900 my-1 underline decoration-pink-400 decoration-wavy">
+                    <span class="sis-name-display uppercase">ICECREAM</span> 🍦
+                </div>
+                <p class="text-xs text-gray-700 mt-2 leading-relaxed font-medium">
+                    Yeh certificate is baat ka saboot hai ki aap duniya ki sabse pyaari, caring aur best behan hain. Aapka pyaar aur aashirwad hamesha mere saath rahe.
+                </p>
+                <div class="mt-3 pt-2 border-t border-pink-100 flex justify-between items-center text-[11px] font-bold text-rose-600">
+                    <span>From: <span class="bro-name-display">Shivam</span> ❤️</span>
+                    <span>Valid: Forever ∞</span>
+                </div>
+            </div>
+
+            <button onclick="sendHug()" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 text-white font-bold text-base shadow-lg hover:scale-105 active:scale-95 transition-all animate-pulse-glow">
+                🤗 Virtual Jaadu Ki Jhappi! 💖
+            </button>
+            <p id="hug-status" class="text-xs font-bold text-purple-700 mt-3 min-h-[18px]"></p>
+        </div>
+    </div>
+
+    <script>
+        /* =========================================================================
+           1. CUSTOMIZABLE DATA & LIVE NOTE EDITOR STATE (LOCALSTORAGE)
+           ========================================================================= */
+        const DEFAULT_DATA = {
+            sisName: "Icecream",
+            broName: "Shivam",
+            letterTitle: "Meri Pyaari Icecream ke Naam",
+            letterBody: `Pyaari Icecream 🍦,\n\nAaj koi special occasion nahi hai, bas dil kiya aapko bataoon ki aap meri zindagi ki sabse precious blessing hain!\n\nAapki care, aapki muskurahat, aur aapka saath mere liye sab kuch hai. Aap bilkul apne naam jaisi hain — Icecream — jo har tension aur stress ko ek pal mein door karke chehre pe muskaan le aati hain! 😊\n\nAap hamesha aise hi khush rahiye aur muskurati rahiye. Hamesha yaad rakhiyega, zindagi ke kisi bhi mod par aapko kisi ki zaroorat ho, aapka bhai Shivam hamesha aapke saath khada rahega! 💖✨`
+        };
+
+        let appData = { ...DEFAULT_DATA };
+        try {
+            const saved = localStorage.getItem('shivam_icecream_respect_v3');
+            if (saved) appData = { ...DEFAULT_DATA, ...JSON.parse(saved) };
+        } catch (e) {}
+
+        function applyAppData() {
+            document.querySelectorAll('.sis-name-display').forEach(el => el.textContent = appData.sisName);
+            document.querySelectorAll('.bro-name-display').forEach(el => el.textContent = appData.broName);
+            document.querySelectorAll('.sis-svg-name').forEach(el => el.textContent = appData.sisName);
+            document.querySelectorAll('.bro-svg-name').forEach(el => el.textContent = appData.broName);
+
+            document.getElementById('letter-title-display').textContent = appData.letterTitle;
+            document.getElementById('letter-body-display').textContent = appData.letterBody;
+        }
+        applyAppData();
+
+        function openEditorModal() {
+            document.getElementById('edit-sis-name').value = appData.sisName;
+            document.getElementById('edit-bro-name').value = appData.broName;
+            document.getElementById('edit-letter-title').value = appData.letterTitle;
+            document.getElementById('edit-letter-body').value = appData.letterBody;
+            openModal('modal-editor');
+        }
+
+        function insertEmoji(emoji) {
+            const ta = document.getElementById('edit-letter-body');
+            const start = ta.selectionStart;
+            const end = ta.selectionEnd;
+            ta.value = ta.value.substring(0, start) + emoji + ta.value.substring(end);
+            ta.focus();
+            ta.selectionStart = ta.selectionEnd = start + emoji.length;
+        }
+
+        function appendPresetLine(line) {
+            const ta = document.getElementById('edit-letter-body');
+            ta.value += line;
+            ta.scrollTop = ta.scrollHeight;
+        }
+
+        function saveCustomNote() {
+            appData.sisName = document.getElementById('edit-sis-name').value.trim() || "Icecream";
+            appData.broName = document.getElementById('edit-bro-name').value.trim() || "Shivam";
+            appData.letterTitle = document.getElementById('edit-letter-title').value.trim() || `Meri Pyaari ${appData.sisName} ke Naam`;
+            appData.letterBody = document.getElementById('edit-letter-body').value;
+
+            try {
+                localStorage.setItem('shivam_icecream_respect_v3', JSON.stringify(appData));
+            } catch (e) {}
+
+            applyAppData();
+            closeModal('modal-editor');
+            openModal('modal-letter');
+            triggerBurst(window.innerWidth / 2, window.innerHeight / 2, 35);
+        }
+
+        function resetDefaultNote() {
+            appData = { ...DEFAULT_DATA };
+            try { localStorage.removeItem('shivam_icecream_respect_v3'); } catch (e) {}
+            applyAppData();
+            openEditorModal();
+        }
+
+        /* =========================================================================
+           2. FLOATING PARTICLES, SKY LANTERNS & FIREWORKS CANVAS ENGINE
+           ========================================================================= */
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let burstParticles = [];
+        let lanterns = [];
+        let isFinaleActive = false;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        const floatingEmojis = ['💖', '🍦', '✨', '🌸', '🤍', '⭐', '🍬'];
+
+        class AmbientParticle {
+            constructor() { this.reset(true); }
+            reset(initial = false) {
+                this.x = Math.random() * canvas.width;
+                this.y = initial ? Math.random() * canvas.height : canvas.height + 30;
+                this.size = 14 + Math.random() * 14;
+                this.speedY = 0.4 + Math.random() * 0.9;
+                this.speedX = (Math.random() - 0.5) * 0.6;
+                this.emoji = floatingEmojis[Math.floor(Math.random() * floatingEmojis.length)];
+                this.opacity = 0.35 + Math.random() * 0.45;
+                this.wobble = Math.random() * Math.PI * 2;
+            }
+            update() {
+                this.y -= this.speedY;
+                this.wobble += 0.02;
+                this.x += Math.sin(this.wobble) * 0.5 + this.speedX;
+                if (this.y < -40) this.reset(false);
+            }
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.opacity;
+                ctx.font = `${this.size}px serif`;
+                ctx.fillText(this.emoji, this.x, this.y);
+                ctx.restore();
+            }
+        }
+
+        class SkyLantern {
+            constructor() { this.reset(true); }
+            reset(initial = false) {
+                this.x = Math.random() * canvas.width;
+                this.y = initial ? Math.random() * canvas.height : canvas.height + 50;
+                this.scale = 0.5 + Math.random() * 0.7;
+                this.speedY = 0.6 + Math.random() * 0.9;
+                this.sway = Math.random() * Math.PI * 2;
+            }
+            update() {
+                this.y -= this.speedY;
+                this.sway += 0.015;
+                this.x += Math.sin(this.sway) * 0.7;
+                if (this.y < -60) this.reset(false);
+            }
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.scale(this.scale, this.scale);
+                const grad = ctx.createRadialGradient(0, 0, 2, 0, 0, 32);
+                grad.addColorStop(0, 'rgba(254, 240, 138, 0.95)');
+                grad.addColorStop(0.5, 'rgba(251, 146, 60, 0.45)');
+                grad.addColorStop(1, 'rgba(251, 146, 60, 0)');
+                ctx.fillStyle = grad;
+                ctx.beginPath();
+                ctx.arc(0, 0, 32, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.fillStyle = '#fb923c';
+                ctx.beginPath();
+                ctx.roundRect(-10, -14, 20, 26, 5);
+                ctx.fill();
+                ctx.fillStyle = '#fef08a';
+                ctx.beginPath();
+                ctx.roundRect(-6, -10, 12, 18, 3);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        class BurstParticle {
+            constructor(x, y, isFirework = false) {
+                this.x = x;
+                this.y = y;
+                const angle = Math.random() * Math.PI * 2;
+                const speed = isFirework ? (2 + Math.random() * 9) : (3 + Math.random() * 8);
+                this.vx = Math.cos(angle) * speed;
+                this.vy = Math.sin(angle) * speed - (isFirework ? 1 : 2);
+                this.gravity = isFirework ? 0.12 : 0.18;
+                this.alpha = 1;
+                this.isFirework = isFirework;
+                this.color = ['#fbbf24', '#f43f5e', '#c084fc', '#38bdf8', '#4ade80'][Math.floor(Math.random() * 5)];
+                this.size = 18 + Math.random() * 14;
+                this.emoji = ['💖', '🍦', '✨', '🥰', '🎉', '🌸'][Math.floor(Math.random() * 6)];
+            }
+            update() {
+                this.vy += this.gravity;
+                this.x += this.vx;
+                this.y += this.vy;
+                this.alpha -= this.isFirework ? 0.014 : 0.016;
+            }
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = Math.max(0, this.alpha);
+                if (this.isFirework) {
+                    ctx.fillStyle = this.color;
+                    ctx.shadowBlur = 10;
+                    ctx.shadowColor = this.color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, 3.5, 0, Math.PI * 2);
+                    ctx.fill();
+                } else {
+                    ctx.font = `${this.size}px serif`;
+                    ctx.fillText(this.emoji, this.x, this.y);
+                }
+                ctx.restore();
+            }
+        }
+
+        for (let i = 0; i < 26; i++) particles.push(new AmbientParticle());
+        for (let i = 0; i < 18; i++) lanterns.push(new SkyLantern());
+
+        function triggerBurst(x = canvas.width / 2, y = canvas.height / 2, count = 35, isFirework = false) {
+            for (let i = 0; i < count; i++) {
+                burstParticles.push(new BurstParticle(x, y, isFirework));
+            }
+        }
+
+        function animateCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            if (isFinaleActive) {
+                lanterns.forEach(l => { l.update(); l.draw(); });
+            } else {
+                particles.forEach(p => { p.update(); p.draw(); });
+            }
+
+            for (let i = burstParticles.length - 1; i >= 0; i--) {
+                burstParticles[i].update();
+                burstParticles[i].draw();
+                if (burstParticles[i].alpha <= 0) burstParticles.splice(i, 1);
+            }
+            requestAnimationFrame(animateCanvas);
+        }
+        animateCanvas();
+
+        /* =========================================================================
+           3. WARM INSTRUMENTAL BACKGROUND MUSIC + RESPECTFUL ROTATING QUOTES
+           ========================================================================= */
+        let audioCtx = null;
+        let isPlaying = false;
+        let melodyTimer = null;
+        let noteIndex = 0;
+        let customAudioEl = null;
+
+        // Warm, emotional piano & strings arrangement with respectful Hinglish quotes
+        const instrumentalArrangement = [
+            { f: 329.63, c: 261.63, d: 340, q1: '"Aap sirf meri behan nahi, meri sabse badi strength hain ✨"', q2: 'Aapki muskurahat se hi ghar mein raunak rehti hai 🌸' },
+            { f: 392.00, c: 0,      d: 340 },
+            { f: 440.00, c: 220.00, d: 460 },
+            { f: 392.00, c: 0,      d: 340 },
+            { f: 329.63, c: 261.63, d: 340 },
+            { f: 293.66, c: 0,      d: 340 },
+            { f: 329.63, c: 196.00, d: 680 },
+
+            { f: 329.63, c: 261.63, d: 340, q1: '"Aapki muskurahat se hi ghar mein raunak rehti hai 🌸"', q2: 'Aapka pyaar aur saath humesha mere saath rahe 🤍' },
+            { f: 392.00, c: 0,      d: 340 },
+            { f: 440.00, c: 220.00, d: 460 },
+            { f: 493.88, c: 0,      d: 340 },
+            { f: 440.00, c: 220.00, d: 340 },
+            { f: 392.00, c: 0,      d: 340 },
+            { f: 440.00, c: 174.61, d: 680 },
+
+            { f: 440.00, c: 174.61, d: 320, q1: '"Aap hain toh har mushkil aasaan lagti hai ✨"', q2: 'Duniya ki sabse pyaari behan ko dil se shukriya 💖' },
+            { f: 523.25, c: 0,      d: 340 },
+            { f: 493.88, c: 196.00, d: 440 },
+            { f: 440.00, c: 0,      d: 320 },
+            { f: 392.00, c: 261.63, d: 340 },
+            { f: 349.23, c: 0,      d: 340 },
+            { f: 392.00, c: 196.00, d: 640 },
+
+            { f: 392.00, c: 196.00, d: 320, q1: '"Hamesha khush rahiye Icecream, aap sabse best hain 💫"', q2: 'Aapka bhai hamesha aapke saath khada hai 🤝' },
+            { f: 440.00, c: 0,      d: 340 },
+            { f: 392.00, c: 174.61, d: 440 },
+            { f: 349.23, c: 0,      d: 320 },
+            { f: 329.63, c: 261.63, d: 340 },
+            { f: 293.66, c: 0,      d: 340 },
+            { f: 261.63, c: 130.81, d: 720 },
+
+            { f: 329.63, c: 261.63, d: 400, q1: '"Aapka pyaar aur aashirwad hamesha bana rahe ❤️"', q2: 'Best Siblings Forever — Shivam ∞ Icecream ✨' },
+            { f: 392.00, c: 0,      d: 400 },
+            { f: 523.25, c: 220.00, d: 580 },
+            { f: 493.88, c: 196.00, d: 440 },
+            { f: 440.00, c: 174.61, d: 980 },
+
+            { f: 329.63, c: 261.63, d: 380 },
+            { f: 392.00, c: 0,      d: 380 },
+            { f: 587.33, c: 196.00, d: 560 },
+            { f: 523.25, c: 261.63, d: 1100 },
+            { f: 0,      c: 0,      d: 450 }
+        ];
+
+        function playLushNote(step) {
+            if (!audioCtx || step.f === 0) return;
+            const now = audioCtx.currentTime;
+            const durSec = (step.d / 1000) * 1.45;
+
+            const leadOsc = audioCtx.createOscillator();
+            const overtoneOsc = audioCtx.createOscillator();
+            const leadGain = audioCtx.createGain();
+            const overGain = audioCtx.createGain();
+
+            leadOsc.type = 'triangle';
+            overtoneOsc.type = 'sine';
+            leadOsc.frequency.setValueAtTime(step.f, now);
+            overtoneOsc.frequency.setValueAtTime(step.f * 2, now);
+
+            overGain.gain.setValueAtTime(0.05, now);
+
+            leadGain.gain.setValueAtTime(0.001, now);
+            leadGain.gain.exponentialRampToValueAtTime(0.22, now + 0.035);
+            leadGain.gain.exponentialRampToValueAtTime(0.0008, now + durSec);
+
+            leadOsc.connect(leadGain);
+            overtoneOsc.connect(overGain);
+            overGain.connect(leadGain);
+            leadGain.connect(audioCtx.destination);
+
+            leadOsc.start(now);
+            overtoneOsc.start(now);
+            leadOsc.stop(now + durSec + 0.05);
+            overtoneOsc.stop(now + durSec + 0.05);
+
+            if (step.c && step.c > 0) {
+                const bassOsc = audioCtx.createOscillator();
+                const padOsc = audioCtx.createOscillator();
+                const padGain = audioCtx.createGain();
+
+                bassOsc.type = 'sine';
+                padOsc.type = 'sine';
+                bassOsc.frequency.setValueAtTime(step.c, now);
+                padOsc.frequency.setValueAtTime(step.c * 1.5, now);
+
+                padGain.gain.setValueAtTime(0.001, now);
+                padGain.gain.linearRampToValueAtTime(0.09, now + 0.15);
+                padGain.gain.exponentialRampToValueAtTime(0.0008, now + durSec * 1.8);
+
+                bassOsc.connect(padGain);
+                padOsc.connect(padGain);
+                padGain.connect(audioCtx.destination);
+
+                bassOsc.start(now);
+                padOsc.start(now);
+                bassOsc.stop(now + durSec * 1.85);
+                padOsc.stop(now + durSec * 1.85);
+            }
+        }
+
+        function scheduleNextNote() {
+            if (!isPlaying || customAudioEl) return;
+            const step = instrumentalArrangement[noteIndex];
+            playLushNote(step);
+
+            if (step.q1) {
+                const q1El = document.getElementById('finale-quote-line');
+                const q2El = document.getElementById('finale-quote-sub');
+                if (q1El) q1El.textContent = step.q1;
+                if (q2El && step.q2) q2El.textContent = step.q2;
+            }
+
+            noteIndex = (noteIndex + 1) % instrumentalArrangement.length;
+            melodyTimer = setTimeout(scheduleNextNote, step.d);
+        }
+
+        function handleMp3Upload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            stopMusic();
+            if (customAudioEl) {
+                customAudioEl.pause();
+                customAudioEl = null;
+            }
+            const url = URL.createObjectURL(file);
+            customAudioEl = new Audio(url);
+            customAudioEl.loop = true;
+            document.getElementById('song-title-display').textContent = `For ${appData.sisName} 🎶`;
+            startMusic();
+        }
+
+        function startMusic() {
+         
